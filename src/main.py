@@ -1,7 +1,11 @@
 from extractor import extract_text_from_pdf
+from cleaner import clean_text
+import os
 
-pdf_path = "data/sample3.pdf"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+pdf_path = os.path.join(BASE_DIR, "data", "sample1.pdf")
 
-text = extract_text_from_pdf(pdf_path)
+raw_text = extract_text_from_pdf(pdf_path)
+cleaned_text = clean_text(raw_text)
 
-print(text[:1000])  # print first 1000 chars
+print(cleaned_text[:1000])
