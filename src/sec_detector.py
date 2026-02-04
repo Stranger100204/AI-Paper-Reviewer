@@ -47,11 +47,25 @@ def extract_sections(text):
     for i in range(len(sorted_sections)):
         section_name, start_pos = sorted_sections[i]
 
-        end_pos = (
-            sorted_sections[i + 1][1]
-            if i + 1 < len(sorted_sections)
-            else len(text)
-        )
+        if section_name == "Conclusion":
+
+            # Stop Conclusion when REFERENCES heading appears
+            ref_match = re.search(r'(?i)\bREFERENCES\b', text[start_pos:])
+            
+            if ref_match:
+                end_pos = start_pos + ref_match.start()
+            else:
+                end_pos = len(text)
+
+        elif section_name == "References":
+            end_pos = len(text)
+
+        else:
+            end_pos = (
+                sorted_sections[i + 1][1]
+                if i + 1 < len(sorted_sections)
+                else len(text)
+            )
 
         section_text[section_name] = text[start_pos:end_pos].strip()
 
