@@ -7,10 +7,11 @@ from scorer import generate_structure_score
 from writing_analyzer import analyze_readability
 from writing_scorer import generate_writing_score
 from writing_scorer import generate_writing_feedback
+from novelty_analyzer import estimate_novelty
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-pdf_path = os.path.join(BASE_DIR, "data", "sample1.pdf")
+pdf_path = os.path.join(BASE_DIR, "data", "sample_test", "sample2.pdf")
 
 raw_text = extract_text_from_pdf(pdf_path)
 cleaned_text = clean_text(raw_text)
@@ -68,3 +69,12 @@ feedback = generate_writing_feedback(readability)
 
 for f in feedback:
     print("-", f)
+
+print("\n--- Novelty Estimation ---")
+
+similarity, novelty_level, similar_paper = estimate_novelty(sections)
+
+if similarity is not None:
+    print(f"Similarity Score: {similarity}")
+    print(f"Novelty Level: {novelty_level}")
+    print(f"Most Similar Corpus Paper: {similar_paper}")

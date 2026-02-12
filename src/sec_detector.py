@@ -3,7 +3,7 @@ import re
 SECTION_ALIASES = {
     "Abstract": ["abstract"],
     "Introduction": ["introduction"],
-    "Methodology": ["methodology", "methods"],
+    "Methodology": ["methodology", "methods", "proposed method", "proposed_approach"],
     "Results": ["results", "experimental results", "evaluation", "results and discussion"],
     "Conclusion": ["conclusion", "conclusions"],
     "References": ["references", "bibliography"]
