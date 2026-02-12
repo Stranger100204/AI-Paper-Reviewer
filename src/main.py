@@ -4,10 +4,13 @@ from sec_detector import extract_sections
 from struct_analyzer import analyze_section_presence
 from struct_analyzer import analyze_section_strength
 from scorer import generate_structure_score
+from writing_analyzer import analyze_readability
+from writing_scorer import generate_writing_score
+from writing_scorer import generate_writing_feedback
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-pdf_path = os.path.join(BASE_DIR, "data", "sample2.pdf")
+pdf_path = os.path.join(BASE_DIR, "data", "sample1.pdf")
 
 raw_text = extract_text_from_pdf(pdf_path)
 cleaned_text = clean_text(raw_text)
@@ -42,5 +45,26 @@ score, feedback = generate_structure_score(strength_report)
 print(f"Structure Score: {score}/100")
 
 print("\n--- Feedback ---")
+for f in feedback:
+    print("-", f)
+
+print("\n--- Writing Quality Metrics ---")
+
+readability = analyze_readability(sections)
+
+if readability:
+    for key, value in readability.items():
+        print(f"{key}: {round(value, 2)}")
+
+if readability:
+    writing_score = generate_writing_score(readability)
+
+    print("\n--- Writing Quality Score ---")
+    print(f"Writing Score: {writing_score}/100")
+
+print("\n--- Writing Feedback ---")
+
+feedback = generate_writing_feedback(readability)
+
 for f in feedback:
     print("-", f)
