@@ -12,7 +12,7 @@ from report_generator import generate_final_report
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-pdf_path = os.path.join(BASE_DIR, "data", "sample_test", "sample1.pdf")
+pdf_path = os.path.join(BASE_DIR, "data", "sample_test", "sample2.pdf")
 
 raw_text = extract_text_from_pdf(pdf_path)
 cleaned_text = clean_text(raw_text)
