@@ -75,7 +75,7 @@ def estimate_novelty(sections):
     )[0]
 
     max_index = similarity_scores.argmax()
-    max_similarity = similarity_scores[max_index]
+    max_similarity = float(similarity_scores[max_index])
 
     most_similar_paper = corpus_files[max_index]
 
