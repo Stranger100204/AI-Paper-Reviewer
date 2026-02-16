@@ -1,0 +1,94 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1373 >>
+stream
+BT
+/F1 11 Tf
+52 760 Td
+(AI Research Paper Review Report) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Overall Score: 76/100) Tj
+0 -16 Td
+(Structure Score: 50/100) Tj
+0 -16 Td
+(Writing Quality Score: 86/100) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Novelty Analysis) Tj
+0 -16 Td
+(Similarity Score: 0.12) Tj
+0 -16 Td
+(Novelty Level: High Novelty) Tj
+0 -16 Td
+(Most Similar Corpus Paper: 2601.00001v1.json) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Section Presence) Tj
+0 -16 Td
+(- Abstract: Present) Tj
+0 -16 Td
+(- Introduction: Present) Tj
+0 -16 Td
+(- Methodology: Reviewer Note: Section not detected.) Tj
+0 -16 Td
+(- Results: Reviewer Note: Section not detected.) Tj
+0 -16 Td
+(- Conclusion: Present) Tj
+0 -16 Td
+(- References: Present) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Section Strength) Tj
+0 -16 Td
+(- Abstract: Adequate ? Section depth meets academic norms) Tj
+0 -16 Td
+(- Introduction: Adequate ? Section depth meets academic norms) Tj
+0 -16 Td
+(- Methodology: Reviewer Note: Section not detected. ? Section not detected in paper) Tj
+0 -16 Td
+(- Results: Reviewer Note: Section not detected. ? Section not detected in paper) Tj
+0 -16 Td
+(- Conclusion: Adequate ? Section depth meets academic norms) Tj
+0 -16 Td
+(- References: Adequate ? Reference coverage appears sufficient) Tj
+0 -16 Td
+() Tj
+0 -16 Td
+(Writing Feedback) Tj
+0 -16 Td
+(- Writing is highly complex. Consider simplifying sentence structure.) Tj
+0 -16 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000001672 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1742
+%%EOF
